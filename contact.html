@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Sheraton Hotel Addis Ababa</title>
+  <link rel="stylesheet" href="contact.css">
+  <script defer src="scripts.js"></script>
+    <!-- Add jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Add this script after importing the CSS -->
+<script>
+  $(document).ready(function() {
+    $('.hamburger').click(function() {
+      $('.nav-links').toggleClass('show');
+    });
+  });
+</script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Sheraton Addis Ababa</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>Address: Menelik II Avenue, Addis Ababa, Ethiopia</p>
+        <p>Phone: +251 11 517 1717</p>
+        <p>Email: info@sheratonaddis.com</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.facebook.com/AddisSheraton/">Facebook</a>
+        <a href="https://x.com/sheraton_addis?lang=en">Twitter</a>
+        <a href="https://www.instagram.com/sheraton_addis_hotel/?hl=en">Instagram</a>
+      </div>
+      <div class="contact-info">
+        <p>Menelik II Avenue, Addis Ababa, Ethiopia</p>
+        <p>Phone: +251 11 517 1717</p>
+        <p>Email: info@sheratonaddis.com</p>
+      </div>
+      <p>&copy; 2024 Sheraton Hotel Addis Ababa. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

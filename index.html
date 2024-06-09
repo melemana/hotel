@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheraton Hotel Addis Ababa</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  <!-- Add jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Add this script after importing the CSS -->
+<script>
+  $(document).ready(function() {
+    $('.hamburger').click(function() {
+      $('.nav-links').toggleClass('show');
+    });
+  });
+</script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Sheraton Addis Ababa</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Welcome to Sheraton Addis Ababa</h1>
+    </section>
+    <!-- About Section -->
+    <section class="about">
+      <h2>About Us</h2>
+      <p>Located in the heart of Addis Ababa, Sheraton Hotel offers unparalleled luxury and comfort for both business and leisure travelers.</p>
+    </section>
+    <!-- Room Types and Rates Section -->
+    <section class="room-types">
+      <h2>Room Types & Rates</h2>
+      <div class="room">
+        <h3>Deluxe Room</h3>
+        <p>$200 per night</p>
+      </div>
+      <div class="room">
+        <h3>Executive Room</h3>
+        <p>$300 per night</p>
+      </div>
+      <div class="room">
+        <h3>Presidential Suite</h3>
+        <p>$1000 per night</p>
+      </div>
+    </section>
+    <!-- Online Booking Section -->
+    <section class="booking">
+      <h2>Online Booking</h2>
+      <form class="booking-form">
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+    <!-- Photo Gallery Section -->
+    <section class="gallery">
+      <h2>Photo Gallery</h2>
+      <div class="gallery-container">
+        <img src="images/sheraton2.webp" alt="Gallery Image 1">
+        <img src="images/sheraton3.webp" alt="Gallery Image 2">
+        <img src="images/sheraton4.jpg" alt="Gallery Image 3">
+        <img src="images/sheraton5.jpg" alt="Gallery Image 4">
+        <img src="images/sheraton6.jpg" alt="Gallery Image 3">
+        <img src="images/sheraton7.jpg" alt="Gallery Image 4">
+      </div>
+    </section>
+    <!-- Testimonials and Reviews Section -->
+    <section class="testimonials">
+      <h2>Testimonials & Reviews</h2>
+      <div class="testimonial">
+        <p>"Amazing experience, wonderful service!" - Samuel mandefrot</p>
+      </div>
+      <div class="testimonial">
+        <p>"The rooms were luxurious and the staff were very friendly." - Yonathan Alemneh</p>
+      </div>
+      <div class="testimonial">
+        <p>"Best hotel in Addis Ababa, highly recommended!" - Melakeselam Yitbarek</p>
+      </div>
+    </section>
+    <!-- Special Offers and Packages Section -->
+    <section class="offers">
+      <h2>Special Offers & Packages</h2>
+      <div class="offer">
+        <h3>Weekend Getaway</h3>
+        <p>Enjoy a special rate of $150 per night on weekends.</p>
+      </div>
+      <div class="offer">
+        <h3>Honeymoon Package</h3>
+        <p>Book our Honeymoon Package and get complimentary spa services.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.facebook.com/AddisSheraton/">Facebook</a>
+        <a href="https://x.com/sheraton_addis?lang=en">Twitter</a>
+        <a href="https://www.instagram.com/sheraton_addis_hotel/?hl=en">Instagram</a>
+      </div>
+      <div class="contact-info">
+        <p>Menelik II Avenue, Addis Ababa, Ethiopia</p>
+        <p>Phone: +251 11 517 1717</p>
+        <p>Email: info@sheratonaddis.com</p>
+      </div>
+      <p>&copy; 2024 Sheraton Hotel Addis Ababa. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

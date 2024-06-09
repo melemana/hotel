@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Sheraton Hotel Addis Ababa</title>
+  <link rel="stylesheet" href="services.css">
+  <script defer src="scripts.js"></script>
+    <!-- Add jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Add this script after importing the CSS -->
+<script>
+  $(document).ready(function() {
+    $('.hamburger').click(function() {
+      $('.nav-links').toggleClass('show');
+    });
+  });
+</script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Sheraton Addis Ababa</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="service-card">
+          <img src="https://source.unsplash.com/random/800x600/?spa" alt="Spa & Wellness">
+          <h3>Spa & Wellness</h3>
+          <p>Relax and rejuvenate with our exclusive spa and wellness treatments.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://source.unsplash.com/random/800x600/?conference" alt="Conference Rooms">
+          <h3>Conference Rooms</h3>
+          <p>State-of-the-art conference rooms equipped with the latest technology for your business needs.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://source.unsplash.com/random/800x600/?room-service" alt="24/7 Room Service">
+          <h3>24/7 Room Service</h3>
+          <p>Enjoy the convenience of our 24/7 room service, delivering delicious meals to your door.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://source.unsplash.com/random/800x600/?fitness" alt="Fitness Center">
+          <h3>Fitness Center</h3>
+          <p>Stay fit and healthy with access to our modern fitness center, open 24/7.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.facebook.com/AddisSheraton/">Facebook</a>
+        <a href="https://x.com/sheraton_addis?lang=en">Twitter</a>
+        <a href="https://www.instagram.com/sheraton_addis_hotel/?hl=en">Instagram</a>
+      </div>
+      <div class="contact-info">
+        <p>Menelik II Avenue, Addis Ababa, Ethiopia</p>
+        <p>Phone: +251 11 517 1717</p>
+        <p>Email: info@sheratonaddis.com</p>
+      </div>
+      <p>&copy; 2024 Sheraton Hotel Addis Ababa. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

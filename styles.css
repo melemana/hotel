@@ -1,0 +1,314 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #002a57;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('images/sheraton6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Room Types and Rates Section */
+  .room-types {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .room-types h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .room {
+    margin-bottom: 20px;
+  }
+  
+  .room h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .room p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Online Booking Section */
+  .booking {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    /* max-width: 600px; */
+    margin: auto;
+    width: 100%;
+  }
+  
+  .booking h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .booking-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .booking-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-form button:hover {
+    background-color: #444;
+  }
+  
+  /* Photo Gallery Section */
+  .gallery {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .gallery h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .gallery-container img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  
+  /* Testimonials and Reviews Section */
+  .testimonials {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial {
+    margin-bottom: 20px;
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Special Offers and Packages Section */
+  .offers {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .offers h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .offer {
+    margin-bottom: 20px;
+  }
+  
+  .offer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .offer p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-links a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      height: 0;
+      overflow: hidden;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+      transition: height 0.3s ease;
+    }
+  
+    .nav-links.show {
+      height: auto;
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      position: static;
+      display: none;
+    }
+  
+    .nav-links.show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
